@@ -7,6 +7,7 @@ window.SITIO = {
   whatsapp: "573175174344",
   whatsappVisible: "317 517 4344",
   correo: "contacto@stemp.company",
+  notificaciones: "notificacionesjudiciales@stemp.company",
   unidades: {
     kalanit: "https://kalanit.vet/",
     amorVitae: "https://jgo-brain.github.io/amor-vitae-web/",

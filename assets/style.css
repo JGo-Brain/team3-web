@@ -178,7 +178,7 @@ form input:focus, form select:focus, form textarea:focus, .buscador:focus { outl
 .logotipo { font-weight: 700; font-size: 1.5rem; color: var(--azul-profundo); letter-spacing: -.01em; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
 .logotipo .puntos { display: inline-flex; gap: 4px; }
 .logotipo .puntos i { width: 9px; height: 9px; border-radius: 50%; display: block; }
-.p-kl { background: #FF0000; } .p-av { background: linear-gradient(135deg, #FF7BAC, #00E0F4 55%, #FFF200); } .p-st { background: #366092; }
+.p-kl { background: #FF0000; } .p-av { background: #FFD400; } .p-st { background: #366092; }
 .pie .logotipo { color: #fff; margin-bottom: 10px; }
 .unidades { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .unidad { background: #fff; border: 1px solid var(--borde); border-radius: 14px; padding: 26px; display: flex; flex-direction: column; gap: 12px; border-top: 5px solid var(--color, var(--azul-stemp)); }
