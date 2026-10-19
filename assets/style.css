@@ -200,3 +200,46 @@ form input:focus, form select:focus, form textarea:focus, .buscador:focus { outl
 @media (max-width: 520px) { .flujo { grid-template-columns: 1fr; } }
 
 section[id] { scroll-margin-top: 80px; }
+
+/* ===== Pase visual (18-oct-2026): fotos a sangre, más aire, tarjetas con imagen ===== */
+body { font-size: 17px; }
+.encabezado .contenedor { min-height: 76px; }
+.hero { position: relative; min-height: min(86vh, 760px); display: flex; align-items: center; color: #fff; background: #142638 center / cover no-repeat; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(16, 32, 48, .95) 0%, rgba(32, 57, 81, .84) 45%, rgba(32, 57, 81, .2) 100%); }
+.hero .contenedor { position: relative; z-index: 1; width: 100%; padding-top: 80px; padding-bottom: 80px; }
+.hero h1 { color: #fff; font-size: clamp(2.4rem, 5.4vw, 4.3rem); letter-spacing: -.02em; max-width: 12.5em; margin-bottom: .35em; }
+.hero .lead { color: #D6E2EE; font-size: clamp(1.05rem, 1.6vw, 1.25rem); max-width: 34em; }
+.hero .etiqueta { color: var(--azul-claro); }
+.hero .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.hero .chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); font-size: .85rem; backdrop-filter: blur(4px); }
+.hero .chip i { width: 9px; height: 9px; border-radius: 50%; }
+.boton-contorno-claro { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.7); }
+.boton-contorno-claro:hover { background: rgba(255,255,255,.1); }
+section { padding: 88px 0; }
+.encabezado-seccion { margin-bottom: 40px; }
+.encabezado-seccion h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); letter-spacing: -.015em; }
+.unidades { gap: 26px; }
+.unidad { padding: 0; overflow: hidden; border: 0; border-radius: 18px; box-shadow: 0 1px 2px rgba(16,32,48,.06), 0 12px 32px rgba(16,32,48,.08); transition: transform .25s ease, box-shadow .25s ease; border-top: 0; }
+.unidad:hover { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(16,32,48,.06), 0 20px 44px rgba(16,32,48,.14); }
+.unidad .foto { position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
+.unidad .foto img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.unidad:hover .foto img { transform: scale(1.04); }
+.unidad .foto::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: var(--color); }
+.unidad .cuerpo { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.oscura { position: relative; color: #fff; background: #102030 center / cover no-repeat; }
+.oscura::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,32,48,.93), rgba(20,38,56,.88)); }
+.oscura .contenedor { position: relative; z-index: 1; }
+.oscura h2, .oscura h3 { color: #fff; }
+.oscura .etiqueta { color: var(--azul-claro); }
+.oscura p, .oscura .flujo p { color: #C9D6E3; }
+.oscura .flujo small { color: #9DB2C7; }
+.oscura .flujo .etapa::before { background: rgba(255,255,255,.18); }
+.oscura .flujo .nodo { box-shadow: 0 0 0 6px rgba(255,255,255,.08); }
+.cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.cifra { border-left: 3px solid var(--azul-claro); padding: 6px 0 6px 20px; }
+.cifra .dato { font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1; margin-bottom: 8px; }
+.cifra p { color: var(--tinta-suave); margin: 0; }
+.js .revelar { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.js .revelar.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none; } .unidad, .unidad .foto img { transition: none; } }
+@media (max-width: 860px) { .hero { min-height: 74vh; } .hero::before { background: linear-gradient(180deg, rgba(16,32,48,.62), rgba(16,32,48,.86) 70%); } section { padding: 64px 0; } }

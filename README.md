@@ -8,6 +8,9 @@ Página del grupo: quiénes somos, las tres unidades (Kalanit, Amor Vitae y STEM
 ## Pendientes
 - El logotipo de Team 3 es provisional (texto con tres puntos en los colores de las unidades): falta identidad propia.
 
+## Fotos
+De Pexels (licencia de Pexels: uso comercial gratis, sin atribución obligatoria), optimizadas en `assets/img/`. Número de cada foto en pexels.com: laboratorio-microscopio (9574556), hexagonos (7293756), tubos-muestras (8460346), mensajero-moto (13311393), consulta-ecografia (6235649). Sin logos de fabricantes ni datos de pacientes.
+
 ## Reglas de escisión
 1. Sitio, repositorio y dominio propios; sin código compartido con los otros sitios (si se parecen, es por copia).
 2. Canales propios para pedidos y cotizaciones, en la configuración del sitio.
