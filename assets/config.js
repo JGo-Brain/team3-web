@@ -1,6 +1,6 @@
 // Configuración de la página corporativa. El grupo solo enlaza: no vende ni recibe solicitudes.
 window.SITIO = {
-  grupo: "Team 3",                                   // nombre público del grupo: se cambia solo aquí
+  grupo: "Teamtres",                                   // nombre público del grupo: se cambia solo aquí
   responsable: "Soluciones y Tecnologías Empresariales SAS",
   sigla: "STEMP",
   nit: "900.308.305-2",

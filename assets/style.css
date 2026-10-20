@@ -1,4 +1,4 @@
-/* Team 3 · paleta de STEMP (Brand Kit v0.1) mientras Team 3 no tenga identidad propia */
+/* Teamtres · colores del Brand Kit v0.1 T3 (los de STEMP y el rojo de Kalanit) */
 :root {
   --azul-profundo: #203951;
   --azul-stemp: #366092;
@@ -174,7 +174,7 @@ form input:focus, form select:focus, form textarea:focus, .buscador:focus { outl
   section { padding: 48px 0; }
 }
 
-/* ---- Propio de Team 3 ---- */
+/* ---- Propio de Teamtres ---- */
 .logotipo { font-weight: 700; font-size: 1.5rem; color: var(--azul-profundo); letter-spacing: -.01em; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
 .logotipo .puntos { display: inline-flex; gap: 4px; }
 .logotipo .puntos i { width: 9px; height: 9px; border-radius: 50%; display: block; }
@@ -243,3 +243,9 @@ section { padding: 88px 0; }
 .js .revelar.visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .js .revelar { opacity: 1; transform: none; transition: none; } .unidad, .unidad .foto img { transition: none; } }
 @media (max-width: 860px) { .hero { min-height: 74vh; } .hero::before { background: linear-gradient(180deg, rgba(16,32,48,.62), rgba(16,32,48,.86) 70%); } section { padding: 64px 0; } }
+
+/* ===== Marca Teamtres v0.1 (20-oct-2026): logo E1, P1 en claro y P3 en oscuro; Amor Vitae en franjas ===== */
+.logotipo img { height: 36px; width: auto; display: block; }
+.pie .logotipo { margin-bottom: 14px; }
+.pie .logotipo img { height: 32px; }
+.p-av { background: linear-gradient(90deg,#203951 0 33.34%,#9DDCF9 33.34% 66.67%,#FF0000 66.67%); }
